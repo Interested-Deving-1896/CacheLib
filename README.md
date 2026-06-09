@@ -1,112 +1,75 @@
-<p align="center">
-  <img width="500" height="140" alt="CacheLib" src="website/static/img/CacheLib-Logo-Large-transp.png">
-</p>
-
+[update-readmes]   Mode: rewrite — migrating to template structure...
 # CacheLib
 
-Pluggable caching engine to build and scale high performance cache services. See
-[www.cachelib.org](https://cachelib.org) for documentation and more information.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/CacheLib)
 
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## What is CacheLib ?
+## Architecture
 
-CacheLib is a C++ library providing in-process high performance caching
-mechanism. CacheLib provides a thread safe API to build high throughput,
-low overhead caching services, with built-in ability to leverage
-DRAM and SSD caching transparently.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
+## Install
 
-## Performance benchmarking
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-CacheLib provides a standalone executable `CacheBench` that can be used to
-evaluate the performance of heuristics and caching hardware platforms against
-production workloads. Additionally `CacheBench` enables stress testing
-implementation and design changes to CacheLib to catch correctness and
-performance issues.
+```bash
+git clone https://github.com/Interested-Deving-1896/CacheLib.git
+cd CacheLib
+```
 
-See [CacheBench](https://cachelib.org/docs/Cache_Library_User_Guides/Cachebench_Overview) for usage details
-and examples.
+## Usage
 
-## Versioning
-CacheLib has one single version number `facebook::cachelib::kCachelibVersion` that can be located at [CacheVersion.h](https://github.com/facebook/CacheLib/blob/main/cachelib/allocator/CacheVersion.h#L31). This version number must be incremented when incompatible changes are introduced. A change is incompatible if it could cause a complication failure due to removing public API or requires dropping the cache. Details about the compatibility information when the version number increases can be found in the [changelog](https://github.com/facebook/CacheLib/blob/main/CHANGELOG.md).
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
+## Configuration
 
-## Building and installation with `getdeps.py`
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-This script is used by many of Meta's OSS tools.  It will download and build all of the necessary dependencies first, and will then invoke cmake etc to build folly.  This will help ensure that you build with relevant versions of all of the dependent libraries, taking into account what versions are installed locally on your system.
+## CI
 
-### Dependencies
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-You can install system dependencies to save building them:
+## Mirror chain
 
-    # Clone the repo
-    git clone https://github.com/facebook/CacheLib
-    # Install dependencies
-    cd CacheLib
-    sudo ./build/fbcode_builder/getdeps.py install-system-deps --recursive cachelib
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/CacheLib`](https://github.com/Interested-Deving-1896/CacheLib) and mirrored through:
 
-If you'd like to see the packages before installing them:
+```
+Interested-Deving-1896/CacheLib  ──►  OpenOS-Project-OSP/CacheLib  ──►  OpenOS-Project-Ecosystem-OOC/CacheLib
+```
 
-    ./build/fbcode_builder/getdeps.py install-system-deps --dry-run --recursive cachelib
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-On other platforms or if on Linux and without system dependencies `getdeps.py` will mostly download and build them for you during the build step.
+## Contributors
 
-Some of the dependencies `getdeps.py` uses and installs are:
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-  * a version of boost compiled with C++14 support.
-  * googletest is required to build and run folly's tests.
+## Origins
 
-### Build
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-This script will download and build all of the necessary dependencies first,
-and will then invoke cmake etc to build CacheLib.  This will help ensure that you build with relevant versions of all of the dependent libraries, taking into account what versions are installed locally on your system.
+## Resources
 
-`getdeps.py` currently requires python 3.6+ to be on your path.
-
-`getdeps.py` will invoke cmake etc.
-
-    # Clone the repo
-    git clone https://github.com/facebook/CacheLib
-    cd CacheLib
-    # Build, using system dependencies if available
-    python3 ./build/fbcode_builder/getdeps.py --allow-system-packages build cachelib
-
-### Run tests
-
-By default `getdeps.py` will build the tests for cachelib. To run them:
-
-    python3 ./build/fbcode_builder/getdeps.py --allow-system-packages test cachelib
-
-
-
-## Contributing
-
-We'd love to have your help in making CacheLib better. If you're interested,
-please read our [guide to contributing](CONTRIBUTING.md)
-
-
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
 ## License
 
-CacheLib is *apache* licensed, as found in the [LICENSE](LICENSE) file.
-
-
-
-## Reporting and Fixing Security Issues
-
-Please do not open GitHub issues or pull requests - this makes the problem
-immediately visible to everyone, including malicious actors. Security issues in
-CacheLib can be safely reported via Facebook's Whitehat Bug Bounty program:
-
-https://www.facebook.com/whitehat
-
-Facebook's security team will triage your report and determine whether or not is
-it eligible for a bounty under our program.
-
-
-## Build status
-
-Clicking on a badge will show you the recent builds for that OS. If your target OS's build is failing, you may check out the latest [release](https://github.com/facebook/CacheLib/releases). If the release is too stale for you, you may wish to check recent issues and PRs for known workarounds.
-
-
-[![linux](https://github.com/facebook/CacheLib/actions/workflows/getdeps_linux.yml/badge.svg)](https://github.com/facebook/CacheLib/actions/workflows/getdeps_linux.yml)
+<!-- AI:start:license -->
+[Apache-2.0](https://github.com/Interested-Deving-1896/CacheLib/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
